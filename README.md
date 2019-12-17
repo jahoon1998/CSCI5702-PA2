@@ -19,11 +19,11 @@ Given two random points A and B in d dimensional space such that A = [a<sub>1</s
 <img src="https://i.postimg.cc/nVB3ygzd/manhattan-distance.png" width="20%"></img>
 
 The corresponding cost function ψ that is minimized when we assign points to clusters using the Manhattan distance metric is given by:
-<img src="https://i.postimg.cc/8PGZN4fT/MD.png" width="40%"></img>
+<img src="https://i.postimg.cc/8PGZN4fT/MD.png" width="20%"></img>
 
 ### Iterative k-Means Algorithm: 
 We learned the basic k-Means algorithm in class which is as follows: k centroids are initialized, each point is assigned to the nearest centroid and the centroids are recomputed based on the assignments of points to clusters. In practice, the above steps are run for several iterations. We present the resulting iterative version of k-Means in Algorithm 1.
-<img src="https://i.postimg.cc/sDJwXW57/iterative-kmeans-algorithm.png" width="60%"></img>
+<img src="https://i.postimg.cc/sDJwXW57/iterative-kmeans-algorithm.png" width="80%"></img>
 
 ### Iterative k-Means clustering on Spark: 
 Implement iterative k-means using Spark. Note that we have provided that centroids for you (see below), so you do not need to select the initial centroids (skip Line 2 of Algorithm 1).
