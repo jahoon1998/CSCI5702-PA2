@@ -12,18 +12,18 @@ Let us say we have a set X of n data points in the d-dimensional space Rd. Given
 Given two points A and B in d dimensional space such that A = [a<sub>1</sub>,a<sub>2</sub> ···a<sub>d</sub>] and B = [b<sub>1</sub>,b<sub>2</sub> ···b<sub>d</sub>], the Euclidean distance between A and B is defined as: ![equation](https://latex.codecogs.com/gif.latex?\left&space;\|&space;a&space;-&space;b&space;\right&space;\|&space;=&space;\sqrt{\sum_{i=1}^{d}(a_{i}-b_{i})^{^{2}}})
 
 The corresponding cost function φ that is minimized when we assign points to clusters using the Euclidean distance metric is given by: 
-<img src="https://i.postimg.cc/2yR2qFHF/Euclidea-Distance.png" width="40%"></img>
+<img src="https://i.postimg.cc/2yR2qFHF/Euclidea-Distance.png" width="20%"></img>
 
 ### Manhattan distance
 Given two random points A and B in d dimensional space such that A = [a<sub>1</sub>,a<sub>2</sub> ···a<sub>d</sub>] and B = [b<sub>1</sub>,b<sub>2</sub> ···b<sub>d</sub>], the Manhattan distance between A and B is defined as:
-<img src="https://i.postimg.cc/nVB3ygzd/manhattan-distance.png" width="40%"></img>
+<img src="https://i.postimg.cc/nVB3ygzd/manhattan-distance.png" width="20%"></img>
 
 The corresponding cost function ψ that is minimized when we assign points to clusters using the Manhattan distance metric is given by:
 <img src="https://i.postimg.cc/8PGZN4fT/MD.png" width="40%"></img>
 
 ### Iterative k-Means Algorithm: 
 We learned the basic k-Means algorithm in class which is as follows: k centroids are initialized, each point is assigned to the nearest centroid and the centroids are recomputed based on the assignments of points to clusters. In practice, the above steps are run for several iterations. We present the resulting iterative version of k-Means in Algorithm 1.
-<img src="https://i.postimg.cc/sDJwXW57/iterative-kmeans-algorithm.png" width="70%"></img>
+<img src="https://i.postimg.cc/sDJwXW57/iterative-kmeans-algorithm.png" width="60%"></img>
 
 ### Iterative k-Means clustering on Spark: 
 Implement iterative k-means using Spark. Note that we have provided that centroids for you (see below), so you do not need to select the initial centroids (skip Line 2 of Algorithm 1).
